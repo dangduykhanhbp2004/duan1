@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>My frist website</title>
+        <link rel="icon" href="images/hình ảnh.jpeg" type="images/jpeg" >
+    </head>
+    <body>
+        <h1> this  is an h1 heading </h1>
+        <h1> this  is an h1 heading </h1>
+        <h1> this  is an h1 heading </h1>
+        <br>
+        <h1> <span style="background-color: tomato;"> this is a span title</span> </h1>
+        <h1> <div style="background-color:blue"> this is a div title</div></h1>
+                
+
+        <br>
+        <a href ="https://www.google.com/?client=safari" target="_blank" title="goes to goodle"> click me </a>
+        <!--this is app link -->
+         <br>
+         <a href ="lỷics.html"  > lyrics</a>   
+         <br>
+         <a href="mailto:dangduykhanhbp2004@gmail.com">my emailß</a>
+         <br>
+         <img src="images/& Other Stories Puff Sleeve Silk Blouse _ Nordstrom.jpg"
+         height="200" width="100" alt ="this is áo">
+         <!--this is app images-->
+         <br>
+         <p>Song Mặc kệ anh
+         </p>
+         <audio controls autoplay loop>
+            <source src="music/MẶC KỆ ANH 1.mp3">
+         </audio>
+        <!--this is app music-->
+
+        <br>
+         <video src="video/MacKeAnhLyricVideo-GIAVNTin-6684837.mp4" controls autoplay muted loop width="500px"></video>
+
+       <dl style="background-color:cyan; border: 2px;">
+        <dt> egg</dt>
+        <dd> là một quả trứng </dd>
+       </dl>
+       <br>
+       <table border="1" style="background-color: black;">
+        <tr align="center" style="background-color: aqua;">
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        </tr>
+        <tr align="center" style="background-color: antiquewhite;">
+            <td>Close</td>
+            <td>8h-10h</td>
+            <td>8h-10h</td>
+            <td>8h-10h</td>
+            <td>8h-10h</td>
+            <td>8h-10h</td>
+            <td>8h-10h</td>
+        </tr>
+       </table>
+       <br>
+      <a href="lỷics.html">
+       <button style="font-size: 25px ; background-color: black ; color: white; border-radius: 20px;"> clickk me 
+       </button>
+      </a>
+
+      <br>
+      <button onclick="dosomething()" style="font-size: 25px ; background-color: black ; color: white; border-radius: 20px;"> clickk me 
+       </button>
+       <p id="start" > hello</p>
+       <script>
+        function dosomething(){
+            document.getElementById("start").innerHTML ="good bye"
+        }
+       </script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
